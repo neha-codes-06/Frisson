@@ -62,7 +62,7 @@ chunk([1,2,3,4,5], 2)
 
 
 
-12. Nested Array Sum
+11. Nested Array Sum
 [1,[2,[3,4]],5] → 15
 
 
