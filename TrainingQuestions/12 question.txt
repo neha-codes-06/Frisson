@@ -1,0 +1,489 @@
+let arr=[1,2,2,3,4,4]
+function removeDuplicates(arr){
+    let object={}
+    let result=[]
+    
+    for(let i=0;i<arr.length;i++){
+        if(!object[arr[i]]){
+            object[arr[i]]=true;
+            // console.log(object[arr[i]])
+            result.push(arr[i])
+            
+            
+        }
+    }
+    return result
+}
+console.log(removeDuplicates(arr))
+
+2 question
+// 1. Remove Duplicates
+// [1,2,2,3,4,4] → [1,2,3,4]
+
+
+// let arr=[1,2,2,3,4,4]
+// function removeDuplicates(arr){
+//     let object={}
+//     let result=[]
+    
+//     for(let i=0;i<arr.length;i++){
+//         if(!object[arr[i]]){
+//             object[arr[i]]=true;
+//             // console.log(object[arr[i]])
+//             result.push(arr[i])
+            
+            
+//         }
+//     }
+//     return result
+// }
+// console.log(removeDuplicates(arr))
+
+// // 2. Group Anagrams
+// // ["eat","tea","tan","ate","nat","bat"]
+
+// // // Output:
+// // [
+// //  ["eat","tea","ate"],
+// //  ["tan","nat"],
+// //  ["bat"]
+// // ]
+
+// let arr=["eat","tea","tan","ate","nat","bat"]
+// function groupAna(){
+//     let result=[]
+    
+    
+    
+// }
+
+
+// 3. Find Missing Number
+// [1,2,4,5] → 3
+
+// let arr=[1,2,4,5]
+// function missingNum(arr){
+//     for(let i=0;i<arr.length;i++){
+//         // console.log(arr[i],i)
+        
+//     }
+    
+    
+// }
+// console.log(missingNum(arr))
+
+
+// 4. Subarray with Given Sum (using object/map)
+// [1,2,3,7,5], sum = 12 → [2,3,7]
+
+
+// let arr=[1,2,3,7,5];
+// function Subarraysum(arr,sum){
+//     for(let i=0;i<arr.length;i++){
+//         // console.log(arr[i])
+//         for(let j=i+1;j<arr.length;j++){
+//             // console.log(arr[j])
+            
+//             for(let k=i+2;k<arr.length;k++){
+//                 // console.log(arr[k])
+                
+            
+//             if(arr[i]+arr[j]+arr[k]===sum){
+//                 return [arr[i],arr[j],arr[k]]
+                
+//             }
+                
+//             }
+//         }
+//     }
+    
+// }
+// console.log(Subarraysum(arr,12))
+
+
+// 12. Nested Array Sum
+// [1,[2,[3,4]],5] → 15
+
+// let arr=[1,[2,[3,4]],5];
+// function nestedArraySum(arr){
+//     let sum=0
+//     for (let i=0;i<arr.length;i++){
+//         for(let j=i+1;j<arr.length;i++){
+//             // console.log(arr[j])
+//         }
+//     //   console.log(arr[i])
+        
+        
+        
+//     }
+//     // return sum
+// }
+// console.log(nestedArraySum(arr))
+
+
+// let arr=[1,[2,[3,4]],5];
+// function nestedsum(arr){
+//     let sum=0;
+//     for(let i=0;i<arr.length;i++){
+//         if(Array.isArray(arr[i])){
+//             sum+=nestedsum(arr[i])
+            
+//         }
+//         else{
+//             sum+=arr[i]
+//             // console.log(sum[i])
+//         }
+//     }
+//     return sum
+
+
+// }
+// console.log(nestedsum(arr))
+
+
+
+
+// Online Javascript Editor for free
+// Write, Edit and Run your Javascript code using JS Online Compiler
+
+// console.log("Start small. Ship something.");
+
+
+// 1. Remove Duplicates
+// [1,2,2,3,4,4] → [1,2,3,4]
+
+
+// let arr=[1,2,2,3,4,4]
+// function removeDuplicates(arr){
+//     let object={}
+//     let result=[]
+    
+//     for(let i=0;i<arr.length;i++){
+//         if(!object[arr[i]]){
+//             object[arr[i]]=true;
+//             // console.log(object[arr[i]])
+//             result.push(arr[i])
+            
+            
+//         }
+//     }
+//     return result
+// }
+// console.log(removeDuplicates(arr))
+
+// // 2. Group Anagrams
+// // ["eat","tea","tan","ate","nat","bat"]
+
+// // // Output:
+// // [
+// //  ["eat","tea","ate"],
+// //  ["tan","nat"],
+// //  ["bat"]
+// // ]
+
+// let arr=["eat","tea","tan","ate","nat","bat"]
+// function groupAna(){
+//     let result=[]
+    
+    
+    
+// }
+
+
+// 3. Find Missing Number
+// [1,2,4,5] → 3
+
+// let arr=[1,2,4,5];
+// function missingNum(arr){
+    
+    
+   
+//     for(let i=0;i<arr.length;i++){
+      
+//         // console.log(arr[i],i)
+        
+//     }
+    
+    
+// }
+// console.log(missingNum(arr))
+
+
+// let arr=[1,2,4,5]
+// function missingNum(arr){
+    
+//     let missnum=0;
+    
+//     for(let i=0;i<arr.length;i++){
+//         missnum=missnum^arr[i]
+        
+
+//     }
+//     return missnum
+
+
+// }
+// console.log(missingNum(arr))
+
+// let arr=[1,2,4,5]
+// function missingNum(arr){
+//     let n=arr.length+1
+//     let total=(n*(n+1))/2
+//     let sum=0;
+//     for(let i=0;i<arr.length;i++){
+//         sum=sum+arr[i]
+//     }
+//     return total-sum
+// }
+// console.log(missingNum(arr))
+
+
+// 4. Subarray with Given Sum (using object/map)
+// [1,2,3,7,5], sum = 12 → [2,3,7]
+
+
+// let arr=[1,2,3,7,5];
+// function Subarraysum(arr,sum){
+//     for(let i=0;i<arr.length;i++){
+//         // console.log(arr[i])
+//         for(let j=i+1;j<arr.length;j++){
+//             // console.log(arr[j])
+            
+//             for(let k=i+2;k<arr.length;k++){
+//                 // console.log(arr[k])
+                
+            
+//             if(arr[i]+arr[j]+arr[k]===sum){
+//                 return [arr[i],arr[j],arr[k]]
+                
+//             }
+                
+//             }
+//         }
+//     }
+    
+// }
+// console.log(Subarraysum(arr,12))
+
+
+// 12. Nested Array Sum
+// [1,[2,[3,4]],5] → 15
+
+
+
+
+// let arr=[1,[2,[3,4]],5];
+// function nestedsum(arr){
+//     let sum=0;
+//     for(let i=0;i<arr.length;i++){
+//         if(Array.isArray(arr[i])){
+//             sum+=nestedsum(arr[i])
+            
+//         }
+//         else{
+//             sum+=arr[i]
+//             // console.log(sum[i])
+//         }
+//     }
+//     return sum
+
+
+// }
+// console.log(nestedsum(arr))
+
+// 8. Immutable Update
+// const user = {
+//   name:"Neha",
+//   address:{city:"Delhi"}
+// };
+
+// updateCity(user, "Mumbai");
+
+// const user={
+//     name:"neha",
+//     address:{
+//         city:"Delhi"
+//     }
+// }
+// user["address"]["city"]="Mumbai"
+// console.log(user)
+
+// 6. Group By Property
+// groupBy(
+//   [
+//     {name:"A", age:20},
+//     {name:"B", age:20},
+//     {name:"C", age:21}
+//   ],
+//   "age"
+// )
+
+// output = [
+//   {20: [{name:"A", age:20}, {name:"B", age:20}]},
+//   {21: [{name:"C", age:21}]}
+// ]
+
+//  let groupBy=(
+//   [
+//      {name:"A", age:20},
+//      {name:"B", age:20},
+//      {name:"C", age:21}
+//   ])
+//   const groupobj={}
+
+//   for(let i=0;i<groupBy.length;i++){
+//     //   console.log(groupBy[i])
+//       let group=groupBy[i]
+//       groupobj[group.age]={...groupobj[group.name],...group}
+       
+       
+//   }
+//   console.log(groupobj)
+   
+
+
+
+// 5. Longest Substring Without Repeating Characters
+// "abcabcbb" → 3  // "abc"
+// let str="abcabcbb"
+// function longestString(str){
+//     let object={}
+//     let result="";
+//     for(let i=0;i<str.length;i++){
+//         if(object[str[i]]){
+//             object[str[i]]++
+//         }
+//         else{
+//             object[str[i]]=1
+//         }
+        
+        
+    
+ 
+//     }
+//     return object
+// }
+// console.log(longestString(str))
+
+
+// 11. Difference Between Arrays
+// diff([1,2,3], [2,3,4]) → [1]
+// let diff=([1,2,3], [2,3,4])
+//  function diffArr(arr){
+     
+     
+    
+        
+         
+     
+    
+
+     
+//  }
+
+// console.log(diffArr(diff))
+
+
+
+// 9. Swap Keys and Values
+// {a:1, b:2} → {1:"a", 2:"b"}
+
+
+
+// let object={
+//     a:1,
+//     b:2
+// }
+// const objectValue=object;
+// let result={}
+// for (let key in objectValue){
+//     console.log(,key)
+    
+    
+    
+    
+    
+// }
+
+// let object={
+//     a:1,
+//     b:2
+// }
+// const result={}
+// for(let key in object){
+//     result[object[key]]=key
+
+// }
+// console.log(result)
+
+
+
+
+
+// let str="abcabcbb"
+// function longestString(str){
+//     let longest="";
+//     let current="";
+//     for(let i=0;i<str.length;i++){
+//         if(!current.includes(str[i])){
+//             current+=str[i]
+//         }
+//         else{
+//             if(current.length>longest.length){
+//                 longest=current
+//             }
+//             // current=current.slice(current.indexOf(str[i])+1)+str[i]
+//             // console.log(current)
+//         }
+        
+
+//     }
+//     return longest
+// }
+
+// console.log(longestString(str))//abc
+
+// function chunk(arr,s){
+//     const result=[];
+//     for(let i=0;i<arr.length;i+=s){
+//         console.log(arr[i])
+//         result.push(arr.slice(i,i+s));
+        
+//     }
+//     return result;
+// }
+// console.log(chunk([1,2,3,4,5], 2));
+
+// function groupBy(array,a){
+//     const output=[]
+//     const result = {};
+//     for(let i=0; i<array.length; i++){
+//         const item = array[i];
+        
+//         const key = item[a];
+        
+//         // console.log(a);
+        
+//         if(!result[key]){
+//             result[key] = [];
+//             // console.log(result[key])
+            
+            
+//         }
+//         result[key].push(item);
+        
+//             // console.log(result[key])
+        
+//     }
+//     return result
+   
+// }
+
+// console.log(groupBy(
+//   [
+//     { name: "A", age: 20 }, 
+//     { name: "B", age: 20 }, 
+//     { name: "C", age: 21 }
+//   ], 
+//   "age"
+// ))  

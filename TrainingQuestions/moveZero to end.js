@@ -1,0 +1,25 @@
+// TODO
+let arr=[0,1,0,3,12]
+function moveZero(arr){
+
+    let result=[]
+    let zeroCount=0
+    // let newArr=arr.sort((a,b)=>a-b)
+    // console.log(newArr)
+    for(let i=0;i<arr.length;i++){
+        if(arr[i]!==0){
+            result.push(arr[i])
+            
+        }
+        else{
+            zeroCount++
+            
+        }
+    }
+    for(let i=0;i<zeroCount;i++){
+        result.push(0)
+    }
+   
+    return result
+}
+console.log(moveZero(arr))

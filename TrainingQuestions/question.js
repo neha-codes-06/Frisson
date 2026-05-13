@@ -1,0 +1,71 @@
+1. Remove Duplicates
+[1,2,2,3,4,4] → [1,2,3,4]
+
+2. Group Anagrams
+["eat","tea","tan","ate","nat","bat"]
+
+// Output:
+[
+ ["eat","tea","ate"],
+ ["tan","nat"],
+ ["bat"]
+]
+
+3. Find Missing Number
+[1,2,4,5] → 3
+
+4. Subarray with Given Sum (using object/map)
+[1,2,3,7,5], sum = 12 → [2,3,7]
+
+5. Longest Substring Without Repeating Characters
+// "abcabcbb" → 3  // "abc"
+
+6. Group By Property
+groupBy(
+  [
+    {name:"A", age:20},
+    {name:"B", age:20},
+    {name:"C", age:21}
+  ],
+  "age"
+)
+
+output = [
+  {20: [{name:"A", age:20}, {name:"B", age:20}]},
+  {21: [{name:"C", age:21}]}
+]
+
+7. Deep Merge Objects (Important)
+deepMerge(
+  {a:1, b:{c:2}},
+  {b:{d:3}}
+)
+
+// {a:1, b:{c:2, d:3}}
+
+8. Immutable Update
+const user = {
+  name:"Neha",
+  address:{city:"Delhi"}
+};
+
+updateCity(user, "Mumbai");
+
+new object, original unchanged
+
+9. Swap Keys and Values
+{a:1, b:2} → {1:"a", 2:"b"}
+
+10. Chunk Array
+chunk([1,2,3,4,5], 2)
+// [[1,2],[3,4],[5]]
+
+
+
+12. Nested Array Sum
+[1,[2,[3,4]],5] → 15
+
+
+
+
+
