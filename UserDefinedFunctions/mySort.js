@@ -1,3 +1,7 @@
+/*custom sort without using built-in method
+ This method corrects the positioning of array from ascending
+  to descending and descending to ascending.
+*/
 
 let arr=[9,3,8,1,4,7,6]
 function mySort(arr){
@@ -20,47 +24,4 @@ console.log(mySort(arr))
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//output=[1, 3, 4, 6, 7, 8, 9]

@@ -1,3 +1,8 @@
+/*custom some without using built-in method
+ This method check if some conditions are true.
+ if some conditions are true then it return true
+*/
+
 let num=[12,33,19,7,8];
 
 function mySome(num){
@@ -14,3 +19,4 @@ function mySome(num){
 }
 
 console.log(mySome(num))
+//output=true
