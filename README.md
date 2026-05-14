@@ -1,7 +1,8 @@
 Training Questions:
 
 Anagram=In this question anagram checks that the two given string are same and each characetrs are same if all characters are correct then it will give true
-Deep Merge=In this question it merges 
+Deep Merge=In this question it merges two objects
+
 
 
 
