@@ -1,3 +1,6 @@
+/*
+this function removes the duplicate elements from the array and return a new array with unique elements.
+*/
 let arr=[1,3,2,2,4,3,3,8,9,7]
 function myRemoveDuplicates(arr){
     let result={}

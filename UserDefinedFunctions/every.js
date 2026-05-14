@@ -3,14 +3,20 @@
  if some conditions are true and some are false so it return false .All conditions should be true
 */
 
-let num=[22,73,71,55,45,33]
+let num=[2,3,6,5,4,3]
 function myEvery(num){
     for(let i=0;i<num.length;i++){
         if(num[i]<18){
             return false
             break
+            
+
+            
+           
            
         }
+        
+        
     }
     return true
 

@@ -1,3 +1,8 @@
+/*
+custom replace function
+This function replace the given value with new value in the string and return the new string.
+*/
+
 let str="I am neha"
 let replaceValue="neha"
 let newValue="niki"

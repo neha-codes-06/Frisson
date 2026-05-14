@@ -1,3 +1,7 @@
+/*
+custom at function
+This function return the element at the given index in the array.
+*/
 let fruits=["apple","mango","kiwi","pineapple","orange"];
 let target=4;
 function myAt(fruits,target){
