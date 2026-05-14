@@ -1,34 +1,27 @@
-let arr=[3,5,2,4,1];
-function mySort(arr){
-    // result=[]
-    
-    for(let i=0;i<arr.length;i++){
-        if(arr[i]>arr[i+1]){
-            let tempValue=arr[i]
-            arr[i]=arr[i+1]
-            arr[i+1]=tempValue
-            
+/*custom sort without using built-in method
+ This method corrects the positioning of array from ascending
+  to descending and descending to ascending.
+*/
 
-            console.log(tempValue)
+let arr=[9,3,8,1,4,7,6]
+function mySort(arr){
+    
+       for(let j=0;j<arr.length;j++){
+        for(i=0;i<arr.length-j-1;i++){
+            if(arr[i]>arr[i+1]){
+                let tempValue=arr[i];
+                arr[i]=arr[i+1]  
+                arr[i+1]=tempValue
+                
+        }    
 
         }
-        // else{
-        //     tempValue=arr[i]
-        //     result.push(tempValue)
-        // }
-        // 
-
     }
-    return tempValue
+    return arr
+
 }
 console.log(mySort(arr))
 
 
 
-// let arr=[1,2,4,5,5,6]
-// arr[arr.length]=22
-// console.log(arr)
-
-// let str="i am neha"
-// let newStr=str.replace("neha","niki")
-// console.log(newStr)
+//output=[1, 3, 4, 6, 7, 8, 9]

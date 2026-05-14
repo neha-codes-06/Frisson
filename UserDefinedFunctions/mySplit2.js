@@ -1,3 +1,7 @@
+/*
+custom split function
+This function split the given string into an array of words and return the new array.
+*/
 let str="neha,bob,charlie";
 function mySplitString(str){
     let result=[];
@@ -15,3 +19,5 @@ function mySplitString(str){
     return result
 }
 console.log(mySplitString(str))
+
+//output=[ 'neha', 'bob', 'charlie' ]

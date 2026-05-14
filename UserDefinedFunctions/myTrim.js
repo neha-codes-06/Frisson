@@ -1,3 +1,8 @@
+/*
+custom trim function
+this function remove the spaces from the beginning and end of the string and return the new string.
+*/
+
 let str="     hello world     ";
 function myTrim(str){
     let result=""
@@ -21,3 +26,5 @@ function myTrim(str){
 
 }
 console.log(myTrim(str))
+
+//output="hello world"

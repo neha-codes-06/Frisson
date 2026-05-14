@@ -1,3 +1,7 @@
+/*custom count without using built-in method
+ This method counts how many words are there in the string.
+*/
+
 let str="I am Neha";
 function countWords(str){
     let count=0;
@@ -22,3 +26,5 @@ function countWords(str){
 
 }
 console.log(countWords(str))
+
+//output=3

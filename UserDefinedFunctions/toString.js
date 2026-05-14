@@ -1,3 +1,7 @@
+/*
+custom toString function
+this function return a string representation of the array elements separated by commas.
+*/
 let fruits = ["Banana", "Orange", "Apple", "Mango"];
 function toString(fruits){
     let output="";
@@ -16,3 +20,4 @@ function toString(fruits){
 
 }
 console.log(toString(fruits))
+//output="Banana,Orange,Apple,Mango"

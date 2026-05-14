@@ -1,3 +1,8 @@
+/*
+custom pop without built in method
+This method removes the last element from the array and return the new array without last element.
+*/
+
 let arr=[1,2,3,4,5,8,9,10,10]
 function myPop(arr){
     let result=[]
@@ -20,6 +25,7 @@ function myPop(arr){
 
 }
 console.log(myPop(arr))
+//output=
 
 
 // let arr=[1,2,3,4,5,5]

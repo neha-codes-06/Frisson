@@ -1,3 +1,7 @@
+/*
+cutom reverse function
+This function reverse the given string and return the new string.
+*/
 let str="javascript";
 function myReverse(str){
     let result="";

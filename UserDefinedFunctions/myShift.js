@@ -1,3 +1,8 @@
+/*
+custom shift without using built in method
+This method remove the first index element of array
+*/
+
 let arr=[3,1,2,2,3,4,5]
 function myShift(arr){
     let result=[];
@@ -13,9 +18,11 @@ function myShift(arr){
                result.push(arr[i])
             }
         }
-        // return result
+        return result
         return value
 
 
 }
 console.log(myShift(arr))
+
+// output=3
