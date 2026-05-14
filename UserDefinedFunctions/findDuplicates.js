@@ -1,3 +1,8 @@
+/*
+In this question we can find duplicates value in array
+*/
+
+
 let arr=[1,2,3,3,4,4,5,6,6]
 function findDuplicates(arr){
     let output=[];
@@ -19,12 +24,9 @@ function findDuplicates(arr){
         }
     }
     return output
-    
-    
-    
-
-
 }
+
+
 console.log(findDuplicates(arr))
 
-// console.log(findDuplicate(arr))
+//output=[ 3, 4, 6 ]
