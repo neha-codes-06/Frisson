@@ -1,3 +1,10 @@
+Training Questions:
+
+Anagram=In this question anagram checks that the two given string are same and each characetrs are same if all characters are correct then it will give true
+Deep Merge=In this question it merges 
+
+
+
 User Defined Methods:
 
 Count Words= This method counts how many words are there in the string.
