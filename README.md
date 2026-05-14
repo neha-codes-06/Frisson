@@ -2,8 +2,14 @@ Training Questions:
 
 Anagram=In this question anagram checks that the two given string are same and each characetrs are same if all characters are correct then it will give true
 Deep Merge=In this question it merges two objects
-
-
+Remove Duplicate=This function removes the duplicate elements from the array and return a new array with unique elements
+Nested array sum=In this question we have to add array inside array.
+Missing Number=In this we have to find the missing number.
+Subarray with Given Sum=In this we have to check which elements of array give the given sum value.
+Object update=in this we have to update the object value.
+Group By Property=In this we have to group the object by the given property.
+String without repeating=In this we have to find string without removing duplicate characters.
+Group Anagrams=In this we have to group the words which are same characters.
 
 
 User Defined Methods:
