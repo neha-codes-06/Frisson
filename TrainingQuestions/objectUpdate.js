@@ -3,14 +3,27 @@
 //   name:"Neha",
 //   address:{city:"Delhi"}
 // };
+            //Object, key, value
+// updateCity(user, key, "Mumbai"); MAKE A FUNCTION WITH THESE PARAMS
 
-// updateCity(user, "Mumbai");
-
-const user={
+let user={
     name:"neha",
     address:{
         city:"Delhi"
     }
 }
-user["address"]["city"]="Mumbai"
-console.log(user)
+let value="Mumbai"
+
+
+// user["address"]["city"]="Mumbai"
+// console.log(user)
+function objectUpdate(user,value){
+
+    user = { ...user,address: {...user.address,city: value
+  }
+
+}
+return user
+
+}
+console.log(objectUpdate(user,value))

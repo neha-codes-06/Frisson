@@ -9,7 +9,6 @@ let object={
 const result={}
 for(let key in object){
     result[object[key]]=key
-
 }
 console.log(result)
 
