@@ -1,3 +1,9 @@
+// 7. Deep Merge Objects (Important)
+// deepMerge(
+//   {a:1, b:{c:2}},
+//   {b:{d:3}}
+// )
+
 function deepMerge(obj1,obj2){
     
     for(let key in obj2){
@@ -14,6 +20,10 @@ console.log(deepMerge(
   {a:1, b:{c:2}},
   {b:{d:3}}
 ));
+
+
+// output={a:1, b:{c:2, d:3}}
+
 
 
 
