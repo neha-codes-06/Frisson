@@ -1,30 +1,36 @@
-/*
-custom trim function
-this function remove the spaces from the beginning and end of the string and return the new string.
-*/
-
-let str="     hello world     ";
-function myTrim(str){
-    let result=""
-    let left=0;
-    let right=str.length-1
-    while(left<right){
-        if(str[left]===" " &&str[right]===" "){
+let arr=["     hello world     "];
+function myTrim(arr){
+   
+    let result=[]
+    let word=""
+    for(let i=0;i<arr.length;i++){
+        let value=arr[i]
+        for(let j=0;j<value.length;j++){
+            let char =value[j]
+            if(char!==" "){
+                word+=char
+            }
+            else{
+                if(word!==""){
+                    result.push(word)
+                    word=""
+                }
+            }
             
-            left++
-            right--
-            continue
-
         }
-        else{
-            result+=str
 
-        }
+
+        
     }
     return result
+    
 
+    
+    
 
 }
-console.log(myTrim(str))
+console.log(myTrim(arr))
+
+
 
 //output="hello world"
