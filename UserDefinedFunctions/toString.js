@@ -16,3 +16,8 @@ function toString(fruits){
 
 }
 console.log(toString(fruits))
+
+
+//output=Banana,Orange,Apple,Mango
+
+
